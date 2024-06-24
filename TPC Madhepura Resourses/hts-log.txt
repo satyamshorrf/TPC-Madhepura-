@@ -1,0 +1,19 @@
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:24:45	Error: 	"Not Found" (404) at link https://www.tpcollege.org/T.P.College Madhepura/ (from https://www.tpcollege.org/)
+18:24:45	Error: 	"Not Found" (404) at link https://www.tpcollege.org/scripts/docs.min.js (from https://www.tpcollege.org/)
+18:24:45	Error: 	"Not Found" (404) at link https://www.tpcollege.org/scripts/ie10-viewport-bug-workaround.js (from https://www.tpcollege.org/)
+18:24:45	Error: 	"Not Found" (404) at link https://www.tpcollege.org/bootstrap/css/bootstrap-theme.min.css (from https://www.tpcollege.org/)
+18:24:45	Error: 	"Not Found" (404) at link https://www.tpcollege.org/bootstrap/css/bootstrap.min.css (from https://www.tpcollege.org/)
+18:24:45	Error: 	"Not Found" (404) at link https://www.tpcollege.org/bootstrap/js/bootstrap.min.js (from https://www.tpcollege.org/)
+18:24:50	Error: 	"Not Found" (404) at link https://www.tpcollege.org/TPC 3 list.pdf (from https://www.tpcollege.org/)
+18:24:50	Error: 	"Not Found" (404) at link https://www.tpcollege.org/scripts/jquery.cycle.all.js (from https://www.tpcollege.org/)
+18:24:50	Error: 	"Not Found" (404) at link https://www.tpcollege.org/www.tpcollege.org (from https://www.tpcollege.org/)
+18:24:50	Error: 	"Not Found" (404) at link https://www.tpcollege.org/lightbox/css/jquery.lightbox-0.5.css (from https://www.tpcollege.org/gallery.php)
+18:24:50	Error: 	"Not Found" (404) at link https://www.tpcollege.org/lightbox/js/jquery.lightbox-0.5.pack.js (from https://www.tpcollege.org/gallery.php)
+18:24:51	Error: 	"Not Found" (404) at link https://www.tpcollege.org/uploads/ps.pdf (from https://www.tpcollege.org/naac.php)
+18:24:51	Error: 	"Not Found" (404) at link https://www.tpcollege.org/images/direction-icon.png (from https://www.tpcollege.org/single.php)

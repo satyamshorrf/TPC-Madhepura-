@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25 Jun, 2016, 8:41:59 PM
+    Author     : Vinit Vijay
+*/
+
+.event_container{
+    list-style: none;
+    font-size: 16px;
+}
+
+.event_item {
+    -moz-box-shadow: 3px 4px 4px 1px #777;
+    -webkit-box-shadow: 3px 4px 4px 1px #777;
+    box-shadow: 3px 4px 4px 1px #777;
+    border: 5px #FFFFFF solid;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color:  #141517;
+}
+
+#event_cont ul li{
+    font-size: 16px;
+    padding:4px 4px;
+    margin:3px;
+    background-color: #FFFFFF;
+    border:1px solid #F2F2F2;
+    border-radius: 5px;}
+#event_cont ul{
+     padding:0px;
+    margin:4px;
+    list-style:none;   
+}
