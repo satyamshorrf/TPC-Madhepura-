@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom styles here */
+    body {
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .btn-submit {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+    }
+    .btn-submit:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<!-- Developer raman -->
+<div class="container">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-submit">Send Message</button>
+  </form>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script>
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+  debugger
+      // Get form data
+      const formData = new FormData(event.target);
+      const formDataObj = Object.fromEntries(formData.entries());
+  
+      // Send POST request to server
+      fetch('http://localhost:3000/send-email', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(formDataObj)
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Failed to send email');
+  }
+  return response.text();
+})
+.then(data => {
+  alert(data); // Show success message
+  setTimeout(() => {
+      window.location.href = 'thankyou.html'; // Replace 'thankyou.html' with the URL of your thank you page
+    }, 500); // 2000 milliseconds (2 seconds)
+})
+.catch(error => {
+  console.error('Error:', error);
+  alert('An error occurred while sending email');
+});
+
+    });
+  </script>
+  
+
+</body>
+</html>
